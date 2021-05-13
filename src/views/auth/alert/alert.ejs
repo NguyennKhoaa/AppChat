@@ -1,0 +1,16 @@
+<%if(errors!=""){%>
+
+<%errors.forEach((err)=>{%>
+<script>openRegisterModal();</script>
+<div class="alert alert-danger"><%- err %></div>
+<% }); %>
+<% } %>
+
+<% if(success!=""){%>
+
+<% success.forEach((item)=>{%>
+<script>openLoginModal();</script>
+<div class="alert alert-success"><%- item %></div>
+<%}); %>
+<%}%>
+<!-- <div class="alert alert-success">Success example.</div> -->
